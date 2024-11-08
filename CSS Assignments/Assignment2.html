@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<style>
+    .nav{
+        display :flex;
+        background-color: rgb(31, 31, 113);
+        height:50px;
+    }
+    .btn{
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 8px;
+        border-radius: 4px 16px;
+        transition: all 1s ease-in-out;
+    }
+    .btn:hover{
+        border: solid blue 3px; 
+        border-radius: 16px 4px;
+        cursor: pointer;
+        
+    }
+    .Search{
+        height: 30px;
+        align-self: center;
+        margin: 15px;
+        border-radius: 16px;
+        width: 500px;
+        max-width: 120%;
+        flex-shrink: 1;
+    }
+    .circle{
+        align-self: center;
+        align-items: center;
+        height: 35px;
+        border-radius: 50%;
+        width: 40px;
+        margin: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border: solid yellow;
+        background-color:green;     
+        transition: 1s ease-in-out;   
+    }
+    .circle:hover{
+        border:solid gray;
+        border-style:dotted;        
+    }
+</style>
+<title>
+    Navbar
+</title>
+<head>
+    <div class = "nav">
+        <button class = 'btn'><strong>Home</strong></button>
+        <button class = 'btn'><strong>About</strong></button>
+        <button class = 'btn'><strong>Help</strong></button>
+        <input type="text" class ="Search" placeholder=" ✨ Search here.. 🔍">
+        <button class = 'circle'></button>
+    </div>
+</head>

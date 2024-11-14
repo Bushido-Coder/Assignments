@@ -1,51 +1,52 @@
 <!DOCTYPE HTML>
 <style>
+    *{
+        padding:0px;
+        margin:0px;
+        box-sizing: border-box;
+    }
     .nav{
         display :flex;
+        gap: 10px;
+        align-items: center;
         background-color: rgb(31, 31, 113);
         height:50px;
+        
     }
     .btn{
-        box-sizing: border-box;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin: 8px;
+        width: 77px;
         border-radius: 4px 16px;
         transition: all 1s ease-in-out;
+        border: none;
+        height: 22px;
+        flex-shrink: 0;
     }
     .btn:hover{
-        border: solid blue 3px; 
+        outline: solid blue 3px; 
         border-radius: 16px 4px;
         cursor: pointer;
         
     }
     .Search{
         height: 30px;
-        align-self: center;
-        margin: 15px;
         border-radius: 16px;
         width: 500px;
         max-width: 120%;
         flex-shrink: 1;
     }
     .circle{
-        align-self: center;
-        align-items: center;
-        height: 35px;
+        height: 30px;
         border-radius: 50%;
-        width: 40px;
+        width: 30px;
         margin: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border: solid yellow;
+        border: 3px solid yellow;
         background-color:green;     
-        transition: 1s ease-in-out;   
+        transition: all 1s ease-in-out;   
+        flex-shrink: 0;
     }
     .circle:hover{
-        border:solid gray;
-        border-style:dotted;        
+        border: 5px solid gray;
+        border-style: dotted;        
     }
 </style>
 <title>
@@ -53,7 +54,7 @@
 </title>
 <head>
     <div class = "nav">
-        <button class = 'btn'><strong>Home</strong></button>
+        <button class = 'btn' style="margin-left: 20px;"><strong>Home</strong></button>
         <button class = 'btn'><strong>About</strong></button>
         <button class = 'btn'><strong>Help</strong></button>
         <input type="text" class ="Search" placeholder=" ✨ Search here.. 🔍">

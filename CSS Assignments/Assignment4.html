@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0px;
+        margin:0px;
+        box-sizing: border-box;
+    }
+    .nav{
+        display :flex;
+        gap: 10px;
+        align-items: center;
+        background-color: rgb(31, 31, 113);
+        height:50px;
+        
+    }
+    .btn{
+        width: 77px;
+        border-radius: 4px 16px;
+        transition: all 1s ease-in-out;
+        border: none;
+        height: 22px;
+        flex-shrink: 0;
+    }
+    .btn:hover{
+        outline: solid blue 3px; 
+        border-radius: 16px 4px;
+        cursor: pointer;
+        
+    }
+    .Search{
+        height: 30px;
+        border-radius: 16px;
+        width: 500px;
+        max-width: 120%;
+        flex-shrink: 1;
+    }
+    .circle{
+        height: 30px;
+        border-radius: 50%;
+        width: 30px;
+        margin: 8px;
+        border: 3px solid yellow;
+        background-color:green;     
+        transition: all 1s ease-in-out;   
+        flex-shrink: 0;
+    }
+    .circle:hover{
+        border: 5px solid gray;
+        border-style: dotted;        
+    }
+    .aside{
+        height:1527px;
+        width: 150px;
+        margin-left: 20px;
+        padding: 20px;
+        background-color:#7b81d5;
+    }
+    .btnm{
+        border: none;
+        background-color:#7b81d5;
+    }
+</style>
+<title>
+    Navbar
+</title>
+<head>
+    <body>
+        <div class = "nav">
+            <button class = 'btn' style="margin-left: 20px;"><strong>Home</strong></button>
+            <button class = 'btn'><strong>About</strong></button>
+            <button class = 'btn'><strong>Help</strong></button>
+            <input type="text" class ="Search" placeholder=" ✨ Search here.. 🔍">
+            <button class = 'circle'></button>
+        </div>
+        <div class="aside">
+            <button class = 'btnm'><strong>Menu Option</strong></button><br><br>
+            <button class = 'btnm'><strong>Menu Option</strong></button><br><br>
+            <button class = 'btnm'><strong>Menu Option</strong></button><br><br>
+            <button class = 'btnm'><strong>Menu Option</strong></button><br><br>
+            <button class = 'btnm'><strong>Menu Option</strong></button><br><br>
+            <button class = 'btnm'><strong>Menu Option</strong></button><br><br>
+        </div>
+    </body>
+</head>    
+</html>
